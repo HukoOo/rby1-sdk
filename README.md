@@ -76,7 +76,7 @@ conan install . -s build_type=Release -b missing -of build
 ##### (Option 1) CMake >= 3.23
 
 ```bash
-cmake --preset conan-release -D BUILD_EXAMPLES=ON
+cmake --preset conan-release -DProtobuf_PROTOC_EXECUTABLE=~/.conan2/p/b/proto404c8f8c4a7f8/p/bin/protoc -D BUILD_EXAMPLES=ON
 cmake --build --preset conan-release
 
 # Install
